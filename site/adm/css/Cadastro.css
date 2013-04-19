@@ -1,0 +1,159 @@
+#cadastro {
+    }
+    .contact_form{
+width:650px;
+height: 330px;
+float:left;
+padding:1px;
+margin:7px 0 0 22%;
+_margin:2px 0 0 1px;
+border:1px #DFD1D2 dashed;
+position:relative;
+display:none;
+}
+.form_row{
+margin-top:25px;
+clear:both;
+padding:0 0 0 0;
+_padding:0 0 0 0;
+color:#a53d17;
+}
+label.contact{
+height:5px;
+width:195px;
+float:left;
+font-size:12px;
+text-align:right;
+padding:0px 0px 0 0;
+color: #333333;
+margin-top:0px;
+}
+input.contact_input{
+width:253px;
+margin-left:60px;
+margin-top:0px;
+height:18px;
+background-color:#fff;
+color:#999999;
+border:1px #DFDFDF solid;
+border-radius: 3px;
+float:left;
+}
+#sexo{
+width:295px;
+margin-left:60px;
+margin-bottom: 5px;
+height:19px;
+background-color:#fff;
+color:#999999;
+border:1px #DFDFDF solid;
+float:left;
+}
+#tpCadastro{
+width:253px;
+margin-left:60px;
+margin-top:25px;
+height:18px;
+background-color:#fff;
+color:#999999;
+border:1px #DFDFDF solid;
+border-radius: 3px;
+float:left;
+}
+textarea.contact_textarea{
+width:253px;
+height:120px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color: #999999;
+background-color:#fff;
+border:1px #DFDFDF solid;
+float:left;
+}
+input.register{
+border-radius: 3px;
+width:75px;
+height:25px;
+border:none;
+cursor:pointer;
+text-align:center;
+float:right;
+color:#FFFFFF;
+background: rgb(255,103,15); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,103,15,1) 0%, rgba(255,103,15,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,103,15,1)), color-stop(100%,rgba(255,103,15,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff670f', endColorstr='#ff670f',GradientType=0 ); /* IE6-9 */
+}
+#register{
+	padding:10px;
+}
+a.contact{
+width:53px;
+height:24px;
+display:block;
+float:right;
+margin:0 0 0 10px;
+background-image:url(../imagens/contact_bt.gif);
+background-repeat:no-repeat;
+background-position:center;
+text-decoration:none;
+text-align:center;
+line-height:24px;
+color:#fff;
+}
+a.checkout{
+width:71px;
+height:25px;
+display:block;
+float:right;
+margin:10px 30px 0 10px;
+background-image:url(../imagens/register_bt.gif);
+background-repeat:no-repeat;
+background-position:center;
+text-decoration:none;
+text-align:center;
+line-height:25px;
+color:#fff;
+}
+a.continue{
+width:71px;
+height:25px;
+display:block;
+float:left;
+margin:10px 0 0 0px;
+background-image:url(../imagens/register_bt.gif);
+background-repeat:no-repeat;
+background-position:center;
+text-decoration:none;
+text-align:center;
+line-height:25px;
+color:#fff;
+}
+.terms{
+padding:0 0 0 8px;
+}
+.form_subtitle{
+position:absolute;
+top:-11px;
+left:7px;
+width:auto;
+height:20px;
+background: rgb(255,103,15); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,103,15,1) 0%, rgba(255,103,15,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,103,15,1)), color-stop(100%,rgba(255,103,15,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff670f', endColorstr='#ff670f',GradientType=0 ); /* IE6-9 */
+text-align:center;
+padding:0 0px 0 0px;
+color:#FFFFFF;
+font-size:11px;
+line-height:20px;
+}
+ 

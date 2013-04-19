@@ -1,0 +1,126 @@
+	body{
+		width:450px;
+		height:450px;
+		float:left;
+		padding:25px;
+		margin:10px 0 0 10px;
+		_margin:20px 0 0 5px;
+		position:relative;	
+	}
+
+	input.botao{
+		width:60px;
+		height:25px;
+		border:none;
+		cursor:pointer;
+		text-align:center;
+		float:right;
+	}
+
+	#salvar{
+		position:relative;
+		margin-top:50px;
+		margin-right: 135px;
+		color:#FFFFFF;
+		background: rgb(255,103,15); /* Old browsers */
+		background: -moz-linear-gradient(top, rgba(255,103,15,1) 0%, rgba(255,103,15,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,103,15,1)), color-stop(100%,rgba(255,103,15,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff670f', endColorstr='#ff670f',GradientType=0 ); /* IE6-9 */
+	}
+
+	#limpar{
+		position:relative;
+		margin-top:50px;
+		margin-right: 70px;
+		color:#FFFFFF;
+		background: rgb(255,103,15); /* Old browsers */
+		background: -moz-linear-gradient(top, rgba(255,103,15,1) 0%, rgba(255,103,15,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,103,15,1)), color-stop(100%,rgba(255,103,15,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff670f', endColorstr='#ff670f',GradientType=0 ); /* IE6-9 */
+	}
+
+	#titulo{
+		margin-left:35px;
+		width:100px;
+		float:center;
+		font-size:14px;
+		text-align:center;
+		padding:4px 5px 0 0;
+		color: #333333;	
+	}
+
+	table.tabela{
+		width: 170px;
+		margin-left:92px;
+		margin-top:50px;
+		padding:5px;
+		border-collapse:collapse;
+		border:1px solid #FFCA5E;
+	}
+
+	table.tabela tr td{
+		background: url('../imagens/bg_td1.jpg') repeat-x top;
+		border:1px #DFDFDF solid;
+		text-align:center;
+		padding:2px;
+		border-collapse:collapse;
+		font-size: 0.8em;
+		line-height: 1.4em;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #777777;
+		border-top: 1px solid #FFCA5E;
+		border-right: 1px solid #DDDDDD;
+	}
+
+	table.tabela th {
+		background: url('../imagens/bg_th.jpg') no-repeat right;
+		height: 20px;
+		color: #FFFFFF;
+		font-size: 0.8em;
+		font-weight: bold;
+		padding: 0px 7px;
+		margin: 20px 0px 0px;
+		text-align: center;
+		border-right: 1px solid #FCF1D4;
+	}
+
+	#nomecurso{
+		width: 140px;
+		margin-left: 65px;
+		margin-top: 25px;
+		height: 18px;
+		background-color: #fff;
+		color: #999999;
+		border: 1px #DFDFDF solid;
+		float: left;
+	}
+
+	#nomedisciplina{
+		width: 140px;
+		margin-left: 30px;
+		margin-top: 25px;
+		height: 18px;
+		background-color: #fff;
+		color: #999999;
+		border: 1px #DFDFDF solid;
+	}
+	
+	/*Horário quando o aluno não clicou sobre ele ou clicou para desmarcar*/
+	a{
+		text-decoration: none;
+		color: #777777;
+	}
+
+	/*classe do Horário quando o aluno clica sobre ele(com o objetivo de agendar a aula no respectivo horário)*/
+	a.agendado{
+		color: #B80000  !important;
+		text-decoration: none;
+	}

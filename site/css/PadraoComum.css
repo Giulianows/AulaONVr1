@@ -1,0 +1,275 @@
+body 
+{
+			color: #868466;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1;
+			margin: 0;
+			min-width: 960px;
+			padding: 0;
+			background: url(../imagens/bg-body.jpg) repeat;
+			
+}
+@font-face {
+	font-family: 'IcoMoon';
+	src: url('font/icomoon.eot');
+	src: url('font/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('font/icomoon.svg#IcoMoon') format('svg'),
+		url('font/icomoon.woff') format('woff'),
+		url('font/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'IcoMoon';
+	font-style: normal;
+}
+.icon-exit:before {
+	content: "\e031";
+}
+
+#icoadm
+{
+	position:absolute;
+	margin-top:180px;
+	margin-left:900px;
+}
+
+#menu{
+		display: block;
+		float: left;
+		padding: 0;
+		text-decoration: none;
+		width: 100%;
+		}
+		#menu ul {
+			list-style-type:none;
+			padding:0%;
+			margin-left: 0%;
+			float:left;
+			width: 100%;
+			font: 16px Arial, Helvetica, sans-serif;
+			z-index:10;
+		}
+
+		#menu ul li
+		{
+		
+			display: block;
+			list-style: none;
+			float: left;
+			line-height: 40px;
+			margin: 0 5px;
+			text-align: center;
+		}
+
+		#menu ul li a {
+			
+			display: block;
+			margin: 0;
+			font-weight: bold;
+			padding: 0 10px;
+			text-decoration: none;
+             
+		}
+
+		#menu a:hover {
+			text-decoration:underline;
+		}
+    
+#tudo
+{
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+	
+}
+
+* html #tudo 
+{
+	height: 100%; /* hack para IE6 que trata height como min-height */
+}
+
+.conteudo
+{
+	background: url(../imagens/bg-content.png) repeat-y top center;
+	margin: 0;
+	min-height: 500px;
+	padding: 0;
+	padding-bottom: 20%;
+}
+.principal
+{
+	padding: 0;
+	margin: 0 10px 0 50px;
+	overflow: auto;
+	min-height: 400px;
+	line-height: 30px;
+	width: 760px;
+	float:left;	
+}
+
+.principal p
+{
+	line-height: 20px;	
+}
+
+.principal li
+{
+	line-height: 20px;	
+}
+
+.principal a
+{
+	color: #15c;
+	text-decoration: none;	
+}
+
+.principal * 
+{
+	
+}
+
+.principal a:hover
+{
+    text-decoration: underline;
+}
+
+.log
+{
+	background-color:#fff;
+	color:#999999;
+	border:1px #DFDFDF solid;
+}
+
+#slogan
+{
+	color:white;
+	font:33px Bickley Script;
+	margin-left:100px;
+	margin-top:-30px;
+}
+
+.botaosite
+{
+	font:bold 14px Tahoma, Geneva, sans-serif;
+	font-style:normal;
+	color:#e2e2e2;
+	background:#db4e15;
+	border:0px solid #ffffff;
+	text-shadow:0px -1px 1px #222222;
+	box-shadow:2px 2px 5px #000000;
+	-moz-box-shadow:2px 2px 5px #000000;
+	-webkit-box-shadow:2px 2px 5px #000000;
+	border-radius:0px 10px 10px 10px;
+	-moz-border-radius:0px 10px 10px 10px;
+	-webkit-border-radius:0px 10px 10px 10px;
+	width:64px;
+	padding: 9px 50px 10px 10px;
+	text-align:center;
+	cursor:pointer;
+	margin:0 auto;
+}
+.botaosite
+{
+	cursor:pointer;
+	position:relative;
+	top:2px;
+}	
+
+#topo
+{
+	height: 180px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	background: url(../imagens/bg-header.png) no-repeat top center;
+	
+}
+#logo
+{
+	position:absolute;
+	margin-left:80px;
+	margin-top:30px;
+}
+#login
+{
+	position:relative;
+	height: 10px;
+	width:400px;
+	color:white;
+	top:26%;
+	left:540px;
+	font: 14px Arial, Helvetica, sans-serif;
+}
+
+#rodape
+	{
+	background: url(../imagens/bg-footer.png) no-repeat top center;
+	height: 222px;
+	margin: 0;
+	padding: 38px 0 31px;
+	margin: 0;
+	overflow: hidden;
+	}
+#rodapei
+	{
+		margin-left:65%;
+		font: 12px Arial, Helvetica, sans-serif;
+	}
+#rodapej
+	{
+		margin-top:-6.4%;
+		margin-left:80%;
+		font: 12px Arial, Helvetica, sans-serif;
+	}
+
+/*Mensagens*/
+.jbar{
+    height:50px;
+    width:100%;
+    background-color: #fff;
+    position:fixed;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=95);
+    opacity: 0.95;
+    -moz-opacity: 0.95;
+    text-align:center;
+    left:0px;
+    z-index:9999;
+    margin:0px;
+    padding:0px;
+}
+.jbar-top{
+    top:0px;
+    border-top:2px solid #fff;
+    border-bottom: 1px solid #ebebeb;
+}
+.jbar-bottom{
+    bottom:0px;
+    border-bottom:2px solid #fff;
+    border-top: 1px solid #ebebeb;
+    color:#777;
+}
+.jbar-content{
+    line-height:46px;
+    font-size: 18px;
+    font-family:'Lucida Grande',sans-serif;
+    position:center;
+}
+a.jbar-cross{
+    position:absolute;
+    width:31px;
+    height:31px;
+    background:transparent url(../imagens/cross.png) no-repeat top left;
+    cursor:pointer;
+    right:10px;
+}
+a.jbar-cross:hover{
+    background-image: url(../imagens/cross_hover.png)
+}
+.jbar-top a.jbar-cross{
+    top:8px;
+}
+.jbar-bottom a.jbar-cross{
+    bottom:8px;
+}

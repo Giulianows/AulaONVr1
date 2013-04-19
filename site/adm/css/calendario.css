@@ -1,0 +1,72 @@
+.cal
+{
+	
+	position:relative;
+	color:#A0A0A0;
+	font-size:16px;
+	margin-left:10%;
+	background:white;
+	border-radius: 20px;
+  	box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+  	height:350px;
+  	width:80%;
+  	border-size:10px;
+}
+
+.mestopo
+{
+	font-size:20px;
+	color:black;
+	height:50px;
+	width:1000px;
+	
+}
+
+.semanatopo
+{
+	font-size:18px;
+	color:#FF6600;
+}
+
+.hoje
+{
+	width:1px;
+	color:#FF6600;
+}
+
+
+/* class "diad" refere-se aos dias que têm aula agendada" */
+.diad
+{
+	color:#FF6600;
+}
+/* Dentro da div do Mouseenter (class="tip" id="tip2") */
+.tip{
+	width:650px;
+	height:200px;
+	border-radius: 0px !important;
+}
+
+table#aula{
+	border-collapse:collapse;
+	border:1px solid #FFCA5E;
+	padding:5px;
+	margin-top:10px;
+	margin-left:9%;
+}
+
+table#aula tr td{
+	border:1px #DFDFDF solid;
+	text-align:center;
+	padding:2px;
+	border-collapse:collapse;
+	color: #777777;
+	border-top: 1px solid #FFCA5E;
+	border-right: 1px solid #DDDDDD;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table#aula tr th{
+	text-align: center;
+	border-right: 1px solid #FCF1D4;
+}

@@ -1,0 +1,49 @@
+	#contato{
+		line-height: 30px !important;
+		margin-left:250px;
+		color: #333;
+	}
+	
+	#contato label{
+		height:5px;
+		width:125px;
+		font-size:14px;
+		color: #333333;
+	}
+	
+	#contato input{
+		width:253px;
+		height:20px;
+		background-color:#fff;
+		color:#999999;
+		border:1px #DFDFDF solid;
+		border-radius: 3px;
+	}
+	
+	#contato textarea{
+		width: 400px;
+		height:150px;
+		background-color:#fff;
+		color:#999999;
+		border:1px #DFDFDF solid;
+		border-radius: 3px;
+	}
+	
+	#contato button{
+		cursor:pointer;
+		padding:10px;
+		float:right;
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		box-shadow:0 1px 3px rgba(0,0,0,0.075);
+		background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
+		background-color: #eaeaea;
+		border-bottom-color: #c5c5c5;
+	}
+ 
+ 	#contato button:hover{
+ 		color: #fff;
+		background-color: #FF6600;
+		background-image: none;
+		padding:20px;
+	}

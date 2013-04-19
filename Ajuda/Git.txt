@@ -1,0 +1,66 @@
+COMANDOS:
+PUSH 	- Envia o commit para a branch no servidor(para todos)
+PULL 	- Pega os arquivos do servidor que foram comitados por outros usuários
+COMMIT 	- Commita os arquivos para um servidor temporário, tem necessidade de SYNC ou PUSH(ver segunda linha)
+ADD     - Enviar um arquivo com conflito para fazer parte do seu último COMMIT
+
+CORES:
+VERMELHO - arquivos comitados por outro usuário estão em conflito com os teus.
+AMARELO  - os arquivos foram comitados mas falta enviar para o servidor - PUSH(ver segunda linha) 
+VERDE    - os arquivos estão prontos para serem SYNC
+ 
+
+
+passo a passo:
+
+1º - Commitar arquivos não comittados.
+2º - TENTAR SYNC(só funcionará se ninguem mais tiver alterado nada e enviado para o servidor)
+3º - Como a chance do passo dois é remota, faremos o quatro
+4º - Abrir o shell, como não deu certo significa que tem arquivos no servidor que não estão na tua maquina, pegar os arquivos\PULL(ver terceira linha)
+5º - Após baixar os arquivos, o git indicara na tela do console as ações que ele tomou(ver fim do arquivo)
+6º - Baseado no item anterior, caso encontrar um "U"(ver fim do arquivo), efetuar o procedimento correto(Resolver conflito).
+7º - No item anterior, acionamos os comandos ADD, PUSH. TENTAR SYNC
+
+
+
+
+
+
+Perguntas:
+
+Como eu resolvo um conflito?
+
+Você deve abrir o arquivo com conflito, buscar pegas tags marcadas pelo git(HEAD,NOME DA SUA BRANCH), mesclar as duas partes, porque HEAD foi a parte do arquivo que estava no 
+servidor(provavelmente algum outro usuário alterou) e NOME DA SUA BRANCH são as alterações feitas por você. Após retirar as marcações e efetuar a mescla correta, abrir o git e executar
+"git add". Após efetuar o "ADD" para todos os arquivos com problemas, você deve dar o comando PUSH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Resultados que o git mostra:
+
+1º - Mostra alguns dados sobre tamanho e etc
+2º - Linha a linha onde houve algum tipo de conflito\interação, existirão uma letra e o arquivo. Ex: M - Cadastro.php
+
+
+Siglas :
+
+M - Merged
+D - Deleted
+U - UnMerged ------------------------------------------------------------ NOTARRRRRRRRRRRRRRR QUE PRECISA RESOLVER OS ARQUIVOS MARCADOS COM "U"

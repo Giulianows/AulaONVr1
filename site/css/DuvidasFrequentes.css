@@ -1,0 +1,36 @@
+h1 {
+		color:orange;
+		margin-left:300px;
+		margin-top:10px;
+		font-size:20px;
+	}
+	
+h3 {
+		color:black;
+		font-weight: bold;
+		cursor: pointer;
+		font-size:16px;
+	}
+	
+h3:hover {
+		color:orange;
+		text-decoration:underline;
+		
+	}
+	
+.accordiondiv{
+			text-align:left;
+			font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+			color: black;
+			font-size:13px;
+			margin-bottom:20px;
+			margin-top:20px;
+		}
+li {
+	margin-bottom:10px;
+}
+
+#rodapej
+	{
+		margin-top:-9.4% !important;
+	}

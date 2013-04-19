@@ -1,0 +1,20 @@
+.btn_comprar{
+	position:relative;
+	left:250px;
+}
+
+#tudocompra
+{
+	margin-top:2%;
+	margin-left:30.55%;
+}
+
+#textocompra
+{
+	margin-top:10%;
+	margin-left:31%;
+	font-weight:bold;
+	color:orange;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}

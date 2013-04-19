@@ -1,0 +1,11 @@
+/*CSS Forms ComboBox*/
+
+.NFSelect {height:34px; position:absolute; border:1px solid transparent; }
+.NFSelectLeft {float:left; width:12px; height:34px; background:url(../imagens/select-left2.fw.png) no-repeat 0 0; vertical-align:middle;}
+.NFSelectRight {height:34px; width:310px; background:url(../imagens/select-right2.fw.png) no-repeat 100% 0; cursor:pointer; font:12px/21px Arial, Helvetica, sans-serif; color:#000; padding-left:3px; margin-left:3px; line-height:34px;}
+.NFSelectTarget {position:absolute; background:none; margin-left:-13px; margin-top:0px; z-index:3; left:0; top:0; padding-bottom:13px;}
+.NFSelectOptions {position:relative; float:left; margin-left:16px; margin-top:26px; list-style:none; padding:0px; line-height:18px; color:#000; z-index:4; max-height:200px;  left:0; top:0;}
+.NFSelectOptions li {padding:3px 0px 3px 0; width:307px;background:#efefef;}
+.NFSelectOptions a {display:block; text-decoration:none; color:#000; padding:3px 0 3px 6px; background:none;}
+.NFSelectOptions a.NFOptionActive {background:#ecf8fd;}
+.NFSelectOptions a:hover {background:#ecf8fd;}

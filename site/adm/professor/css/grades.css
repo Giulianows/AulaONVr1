@@ -1,0 +1,110 @@
+h1{
+
+	margin-left: 24% !important;
+	margin-top: -10px;
+}
+
+.todasemana{
+	background: url('../../../imagens/quadronegro.png') no-repeat right;
+	height: 400px;
+	width: 800px;
+	margin-left: 3%;
+	margin-top: 50px;
+	}
+
+.dsemana{
+	/*background: url('../../../imagens/quadronegro1.png') no-repeat right;*/
+	width: 120px;
+	height: 5px;	
+	padding:0.1em;
+	float: left;
+	margin: 5px 5px 5px 0;
+	text-align:center;
+	
+	}
+	
+.dsemana p{
+	color:white;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	text-decoration: none;
+	margin-top:8px;
+}
+
+a.semana:visited{
+	
+	width:70px;
+	height:30px;
+	padding:0.1em;
+	float: left;
+	margin: 5px 5px 5px 0;
+	text-align:left;	
+}
+/*	
+.gradesalva{
+	width: 450px;
+	height: 199px;
+	padding: 0.5em;
+	float: left;
+	margin: 10px;
+	text-align:center;
+	border: 1px solid #aaaaaa;
+	}*/
+	
+	#domingo{
+	margin-left:283px;
+	margin-top:50px;
+	position:absolute;
+	}
+	
+	#segunda{
+	margin-left:240px;
+	margin-top:80px;
+	position:absolute;
+	}
+	
+	#terca{
+	margin-left:235px;
+	margin-top:50px;
+	position:absolute;
+	}
+	
+	#quarta{
+	margin-left:-245px;
+	margin-top:150px;
+	position:absolute;
+	}
+	
+	#quinta{
+	margin-left:334px;
+	margin-top:200px;
+	position:absolute;
+	}
+	
+	#sexta{
+	margin-left:395px;
+	margin-top:150px;
+	position:absolute;
+	}
+	
+	#sabado{
+	margin-left:178px;
+	margin-top:300px;
+	position:absolute;
+	}
+/* 
+.gradesalva p{
+	border: 1px solid #aaaaaa;
+	background: url('../../../imagens/dtable.gif') white repeat-x scroll center left;
+	color: #222222; 
+	font-weight: bold; 
+	}
+
+#lixeira{
+	position:absolute;
+	width: 10px;
+	height: 30px;
+	left:1050px;
+	top:260px;
+	}*/
