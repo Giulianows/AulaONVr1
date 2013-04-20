@@ -4,7 +4,9 @@
 <?php 
 	$id				= $_POST['id'];
 	$idProfessor	= $_POST['idProfessor'];
+	$valorAula		= $_POST['valorAula'];
 	
+	$valorAula		= antiInjection($valorAula);
 	$id 			= antiInjection($id);
 	$idProfessor	= antiInjection($_POST['idProfessor']);
 
@@ -23,12 +25,12 @@
 			$array 			= explode(",",$id);
 			
 			for ($i=0; $i<count($array); $i++){
-				$sql = $sql . "(" . $idProfessor . "," . $array[$i] . "), ";
+				$sql = $sql . "(" . $idProfessor . "," . $array[$i] . "," . $valorAula . "), ";
 			}
 
 			$sql = substr($sql,0,strlen($sql)-2);
 
-			$sql = "INSERT INTO Disciplina_Professor (Professor_Id,Disciplina_Id) VALUES " . $sql . ";";
+			$sql = "INSERT INTO Disciplina_Professor (Professor_Id,Disciplina_Id, Valor) VALUES " . $sql . ";";
 			$resultado = mysql_query($sql);
 		}
 

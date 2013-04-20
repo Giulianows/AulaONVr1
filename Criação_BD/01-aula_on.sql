@@ -135,6 +135,7 @@ CREATE  TABLE IF NOT EXISTS `aulaonco_site_aulas`.`Disciplina_Professor` (
   `Id` INT NOT NULL AUTO_INCREMENT ,
   `Disciplina_Id` INT NOT NULL ,
   `Professor_Id` INT NOT NULL ,
+  `Valor` INT NOT NULL ,
   PRIMARY KEY (`Id`) ,
   INDEX `index_Disciplina_Professor_Professor_Id` (`Professor_Id` ASC) ,
   INDEX `index_Disciplina_Professor_Disciplina_Id` (`Disciplina_Id` ASC) ,
