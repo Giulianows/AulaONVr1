@@ -14,10 +14,9 @@
 			
 			$fundamental		= mysql_query("SELECT * FROM Disciplinas WHERE Nivel_Disciplina_Id=1 ORDER BY Id");
 			$medio 				= mysql_query("SELECT * FROM Disciplinas WHERE Nivel_Disciplina_Id=2 ORDER BY Id");
-			$cursosProfessor	= mysql_query("SELECT Disciplina_Id, Valor FROM Disciplina_Professor WHERE Professor_Id='$idProfessor'");
+			$cursosProfessor	= mysql_query("SELECT Disciplina_Id FROM Disciplina_Professor WHERE Professor_Id='$idProfessor'");
 			$cont=0;
 			while ($sql = mysql_fetch_row($cursosProfessor)){
-				$valorAulaAtual = $sql[1];
 				$cursosAtuais[$cont] = $sql[0];
 				$cont++;
 			}			
@@ -26,6 +25,7 @@
 			header("location: ../Login.php?codigo=5");
 			die();
 		}
+
 
 	    /*$resultado = mysql_query("SELECT c.* FROM curso c 
 									INNER JOIN curso_professor cf ON c.Id = cf.Curso_id
@@ -141,11 +141,10 @@
 	        cadastrarAulas(ids);
 			
 		}
-
 		
 		function cadastrarAulas(ids){
 			
-			$.post("professor/CadastrarAulas.php",{ id:ids, idProfessor:$('#professor').val(), valorAula:$('#valorAula').val()},
+			$.post("professor/CadastrarAulas.php",{ id:ids, idProfessor:$('#professor').val()},
 				function(data){
 					if(data){
 						$(".mensagem").click();						
@@ -200,10 +199,9 @@
 					
 					idsSuperior = idsSuperior.substring(0,idsSuperior.length-1);
 
-					$.post("professor/CadastrarAulasSuperior.php",{idDisciplina:$('#disciplinaSelecionada').val(),nomeDisciplina:novaDisciplina,idsSuperior:idsSuperior,idProfessor:$('#professor').val(),valorAula:$('#valorAulaS').val()},						
+					$.post("professor/CadastrarAulasSuperior.php",{idDisciplina:$('#disciplinaSelecionada').val(),nomeDisciplina:novaDisciplina,idsSuperior:idsSuperior,idProfessor:$('#professor').val()},						
 						function(data){
-							$(".mensagem").click();		
-							autoComplete();			
+							$(".mensagem").click();					
 						}
 					);	
 					
@@ -225,69 +223,68 @@
 			}					
 		});
 
-		autoComplete();
-		function autoComplete(){
-			
-			$.post("professor/BuscarDisciplinas.php", {},
-					function(){
-					}
-				)
-				.success(function(data) { 
-				  	var valoresF = [];			  	
-					dados = data.split("--");
-					valores = dados[0].split(",");
-					ids		= dados[1].split(",");
-					for(var i=0; i<valores.length; i++){
-						valoresF.push({label: '' + valores[i]  + '', value: '' + ids[i] + ''});
-					}
-	
-					var names = valoresF;
-					
-				    var accentMap = {
-				  	      "á": "a",
-				  	      "â": "a",
-				  	      "ã": "a",
-				  	      "ó": "o",
-				  	      "ô": "o",
-				  	      "õ": "o",
-				  	      "ç": "c",	 
-				  	      "ê": "e",
-				  	      "é": "e",
-				  	      "í": "i",
-				  	      "ú": "u"	     	     		    		    
-				  	    };
-			  	    
-				    var normalize = function( term ) {
-					      var ret = "";
-					      for ( var i = 0; i < term.length; i++ ) {
-					        ret += accentMap[ term.charAt(i) ] || term.charAt(i);
-					      }
-					      return ret;
-					    };
-	
-				    $("#novaDisciplina").autocomplete({
-				      source: function( request, response ) {
-				        var matcher = new RegExp( $.ui.autocomplete.escapeRegex( request.term ), "i" );
-				        response( $.grep( names, function( value ) {
-				          value = value.label || value.value || value;
-				          return matcher.test( value ) || matcher.test( normalize( value ) );
-				        }) );
-				      },
-			           select: function(event, ui) {
-				       		$("#novaDisciplina").val(ui.item.label);
-			               	$('#disciplinaSelecionada').val(ui.item.value);
-		               		return false;
-			           	},
-			           	focus: function(event, ui) {
-							$(".msgAC").hide();
-			               	$("#novaDisciplina").val(ui.item.label);
-			               	$('#disciplinaSelecionada').val(ui.item.value);
-			               	return false;    
-			           	}
-				    });
-					    
-				});	  
-		}
+
+		
+		$.post("professor/BuscarDisciplinas.php", {},
+				function(){
+				}
+			)
+			.success(function(data) { 
+			  	var valoresF = [];			  	
+				dados = data.split("--");
+				valores = dados[0].split(",");
+				ids		= dados[1].split(",");
+				for(var i=0; i<valores.length; i++){
+					valoresF.push({label: '' + valores[i]  + '', value: '' + ids[i] + ''});
+				}
+
+				var names = valoresF;
+				
+			    var accentMap = {
+			  	      "á": "a",
+			  	      "â": "a",
+			  	      "ã": "a",
+			  	      "ó": "o",
+			  	      "ô": "o",
+			  	      "õ": "o",
+			  	      "ç": "c",	 
+			  	      "ê": "e",
+			  	      "é": "e",
+			  	      "í": "i",
+			  	      "ú": "u"	     	     		    		    
+			  	    };
+		  	    
+			    var normalize = function( term ) {
+				      var ret = "";
+				      for ( var i = 0; i < term.length; i++ ) {
+				        ret += accentMap[ term.charAt(i) ] || term.charAt(i);
+				      }
+				      return ret;
+				    };
+
+			    $("#novaDisciplina").autocomplete({
+			      source: function( request, response ) {
+			        var matcher = new RegExp( $.ui.autocomplete.escapeRegex( request.term ), "i" );
+			        response( $.grep( names, function( value ) {
+			          value = value.label || value.value || value;
+			          return matcher.test( value ) || matcher.test( normalize( value ) );
+			        }) );
+			      },
+		           select: function(event, ui) {
+			       		$("#novaDisciplina").val(ui.item.label);
+		               	$('#disciplinaSelecionada').val(ui.item.value);
+	               		return false;
+		           	},
+		           	focus: function(event, ui) {
+						$(".msgAC").hide();
+		               	$("#novaDisciplina").val(ui.item.label);
+		               	$('#disciplinaSelecionada').val(ui.item.value);
+		               	return false;    
+		           	}
+			    });
+				    
+			});	  
+
 		//Tab3 Aula Livre
 		
 		$("#inserirNovaPalaraCHave").click(function(){
@@ -320,7 +317,7 @@
 				
 				palavrasChaves = palavrasChaves.substring(0,palavrasChaves.length-1);
 	
-				$.post("professor/CadastrarAulasLivres.php",{nomeAula:nomeAula,palavrasChaves:palavrasChaves,idProfessor:$('#professor').val(),valorAula:$('#valorAulaO').val()},						
+				$.post("professor/CadastrarAulasLivres.php",{nomeAula:nomeAula,palavrasChaves:palavrasChaves,idProfessor:$('#professor').val()},						
 					function(data){
 						if(data){
 							$(".mensagem").click();
@@ -354,7 +351,7 @@
 	<!--conteudo-->
     
     	<div class="principal">
-    	<input type="hidden" id="professor" value="<?php echo $idProfessor?>" />    	
+    	<input type="hidden" id="professor" value="<?php echo $idProfessor?>" />
     		<div id="tabs">
     			<ul>
 	        		<li><a href="#tabs-1">Educação Básica</a></li>
@@ -382,7 +379,6 @@
 					    <?php
 							while ($obj = mysql_fetch_array($fundamental)) {?>
 								 <li id="<?php echo $obj['Id'];?>" class="<?php echo in_array($obj['Id'],$cursosAtuais) ? "ui-selected ui-widget-content " : "ui-widget-content "; ?>"><?php echo $obj['Nome'];?></li>
-								
 						<?php 
 							}
 						?>
@@ -393,16 +389,24 @@
 						<label>Valor hora-aula</label>
 					</div>
 					<div class="valor">
-				    	<select id="valorAula">
-				    		<?php 
-				    			for($i=10; $i<=200; $i=$i+10){
-				    		?>
-					  	  			<option <?php echo $valorAulaAtual == $i ? "selected":""?> value="<?php echo $i?>">R$<?php echo $i?></option>
-				    		<?php 
-				    			}
-				    		?>				  	  			
-					    </select>
-					</div>
+			    	<select>
+				  	  <option value="dez">R$10</option>
+				      <option value="vinte">R$20</option>
+				      <option value="trinta">R$30</option>
+				      <option value="dez">R$40</option>
+				      <option value="vinte">R$50</option>
+				      <option value="trinta">R$60</option>
+				      <option value="dez">R$70</option>
+				      <option value="vinte">R$80</option>
+				      <option value="trinta">R$90</option>
+				      <option value="dez">R$100</option>
+				      <option value="vinte">R$110</option>
+				      <option value="trinta">R$120</option>
+				      <option value="dez">R$130</option>
+				      <option value="vinte">R$140</option>
+				      <option value="trinta">R$150</option>
+				    </select>
+				</div>
 				</div>
     			<div id="tabs-2">
 	    			<div class="conteudoDados">
@@ -451,15 +455,23 @@
 						<label>Valor hora-aula</label>
 					</div>
 					<div class="valors">
-				    	<select id="valorAulaS">
-				    		<?php 
-				    			for($i=10; $i<=200; $i=$i+10){
-				    		?>
-					  	  			<option value="<?php echo $i?>">R$<?php echo $i?></option>
-				    		<?php 
-				    			}
-				    		?>				  	  			
-					    </select>
+			    	<select>
+				  	  <option value="dez">R$10</option>
+				      <option value="vinte">R$20</option>
+				      <option value="trinta">R$30</option>
+				      <option value="dez">R$40</option>
+				      <option value="vinte">R$50</option>
+				      <option value="trinta">R$60</option>
+				      <option value="dez">R$70</option>
+				      <option value="vinte">R$80</option>
+				      <option value="trinta">R$90</option>
+				      <option value="dez">R$100</option>
+				      <option value="vinte">R$110</option>
+				      <option value="trinta">R$120</option>
+				      <option value="dez">R$130</option>
+				      <option value="vinte">R$140</option>
+				      <option value="trinta">R$150</option>
+				    </select>
 					</div>
 				</div>
     
@@ -498,16 +510,24 @@
 						<label>Valor hora-aula</label>
 					</div>
 					<div class="valoro">
-				    	<select id="valorAulaO">
-				    		<?php 
-				    			for($i=10; $i<=200; $i=$i+10){
-				    		?>
-					  	  			<option value="<?php echo $i?>">R$<?php echo $i?></option>
-				    		<?php 
-				    			}
-				    		?>				  	  			
-					    </select>
-					</div>
+			    	<select>
+				  	  <option value="dez">R$10</option>
+				      <option value="vinte">R$20</option>
+				      <option value="trinta">R$30</option>
+				      <option value="dez">R$40</option>
+				      <option value="vinte">R$50</option>
+				      <option value="trinta">R$60</option>
+				      <option value="dez">R$70</option>
+				      <option value="vinte">R$80</option>
+				      <option value="trinta">R$90</option>
+				      <option value="dez">R$100</option>
+				      <option value="vinte">R$110</option>
+				      <option value="trinta">R$120</option>
+				      <option value="dez">R$130</option>
+				      <option value="vinte">R$140</option>
+				      <option value="trinta">R$150</option>
+				    </select>
+				</div>
     			</div>
 			</div>
 		</div>

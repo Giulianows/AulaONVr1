@@ -5,7 +5,6 @@
 	$nomeAula		= antiInjection($_POST['nomeAula']);
 	$palavrasChaves	= antiInjection($_POST['palavrasChaves']); 
 	$idProfessor	= antiInjection($_POST['idProfessor']);
-	$valorAula		= antiInjection($_POST['valorAula']);
 	$idDisciplina	= "";
 	
 	include "../conecta_mysql.php";
@@ -28,7 +27,7 @@
 		$linhas 	= mysql_num_rows($resultado);
 	
 		if($linhas == 0){
-			$resultado	= mysql_query("INSERT INTO Disciplina_Professor (Disciplina_Id, Professor_Id, Valor) VALUES ('$idDisciplina','$idProfessor','$valorAula')");
+			$resultado	= mysql_query("INSERT INTO Disciplina_Professor (Disciplina_Id, Professor_Id) VALUES ('$idDisciplina','$idProfessor')");
 			$idPD		= mysql_insert_id();
 		}else{
 			$idPD 	= mysql_result($resultado, 0, "Id");
