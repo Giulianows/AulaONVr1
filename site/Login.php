@@ -20,7 +20,7 @@
 
 function verificarCadastro(email) {
 	var login = email;
-    if(login == null || login = "")
+    if(login == null || login == "")
     {
     	login = $('input[name=login]').val();
 	}
@@ -122,7 +122,7 @@ $(document).ready(function(){
             message: '<h1>Conectando...</h1>'
         });    
 
-		verificarCadastro();
+		verificarCadastro("");
 		
 	});
 	

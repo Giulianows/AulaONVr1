@@ -33,7 +33,7 @@ $face = antiInjection($face);
 if(!$face){
 	$senha = md5($senha);
 }
-
+;
 if($nome == "" or $dn == "" or $tpCadastro == "" or $email == "" or $senha == ""){
 	if($face){
 		echo "Cadastro.php?codigo=1";
@@ -63,8 +63,8 @@ if($linhas > 0){
 	}
 
 }else{
-	
-	$result = mysql_query("INSERT INTO Usuario(Nome,DN,Sexo,CPF,Email,Telefone,Celular,Senha) Values('$nome', '$dn' , '$sexo',
+
+	$result = mysql_query("INSERT INTO Usuario(Nome,DN,Sexo,CPF,Email,Telefone,Celular,Senha,Facebook) Values('$nome', '$dn' , '$sexo',
 			'$cpf', '$email', '$telefone', '$celular', '$senha')");
 	
 }
