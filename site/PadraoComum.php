@@ -8,25 +8,23 @@
     <link rel="shortcut icon" href="imagens/logoaulaonn.ico">
     <link rel="stylesheet" href="css/CSSReset.css" />
     <link rel="stylesheet" href="css/PadraoComum.css" />
-    <link rel="stylesheet" href="css/ComponentesForms.css" />
     <link rel="stylesheet" href="css/uniform.default.css" media="screen" />
-    
-    <script language="javascript" type="text/javascript" src="js/jquery-1.8.3.js"></script> 
+     
+    <script language="javascript" type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="js/jquery.validate.js"></script>
     <script type="text/javascript" src="js/jquery.bar.js"></script> 
-    <script type="text/javascript" src="js/jquery.bar.js"></script> 
-    <script language="javascript" type="text/javascript" src="js/ComponentesForms.js"></script>
-    <script src="js/jquery.uniform.js"></script>
+    <!--  <script type="text/javascript" src="js/jquery.uniform.js"></script>-->
+    
     
     <script type='text/javascript'>
-    // Estilo para todos os select e checkbox
-    $(function () {
-        $("select, :checkbox").uniform();
-    });
+	    // Estilo para todos os select e checkbox
+	    //$(function () {
+	      // $("select, :checkbox").uniform();
+	    //});
 	</script>
 	
 </head>
-
 <body>
 <div id="tudo">
                 <div id="topo">
@@ -57,8 +55,11 @@
 			            </a>						
 					<?php }?>
 					</p>
-                    </div>
+					<br>
+					
+                    </div>                    
                 <!--/login-->
+                
                 <a href="adm/index.php" id="icoadm"><img src="imagens/work.png" title="Home do usuário" alt="Home do usuário"></a> 
                 </div>
         <!--menu-->

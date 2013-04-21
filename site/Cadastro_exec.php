@@ -9,7 +9,7 @@ $celular = $_POST['celular'];
 $senha = $_POST['senha'];
 
 $tpCadastro = $_POST['tpCadastro'];
-
+$face 		= $_POST['face'];
 
 function antiInjection($str) 
 {
@@ -27,8 +27,21 @@ $cpf = antiInjection($cpf);
 $email = antiInjection($email);
 $telefone = antiInjection($telefone);
 $senha = antiInjection($senha);
+$tpCadastro = antiInjection($tpCadastro);
+$face = antiInjection($face);
 
-$senha = md5($senha);
+if(!$face){
+	$senha = md5($senha);
+}
+
+if($nome == "" or $dn == "" or $tpCadastro == "" or $email == "" or $senha == ""){
+	if($face){
+		echo "Cadastro.php?codigo=1";
+		die();
+	}
+	header("location:Cadastro.php?codigo=1");
+	
+}
 
    include "Conecta_Mysql.php";
 
@@ -39,11 +52,14 @@ if($linhas > 0){
 	
 	$usuario_id =  mysql_result($resultado, 0, "Id");
 	$result = mysql_query("SELECT COUNT(*) as Total FROM ".$tpCadastro." WHERE usuario_id='$usuario_id'");
-	$linhas = mysql_result($resultado, 0, "Total");
+	$linhas = mysql_result($result, 0, "Total");
 	
 	if($linhas > 0){
-		header("location:Cadastro.php?codigo=8");
-		die();
+		if($face){
+			echo "Cadastro.php?codigo=8";
+			die();
+		}
+		header("location:Cadastro.php?codigo=8");		
 	}
 
 }else{
@@ -59,10 +75,33 @@ if($result || $usuario_id <> ''){
 	
 	$idUsuario = ($usuario_id == '') ? mysql_insert_id() : $usuario_id;	
 	mysql_query("INSERT INTO ".$tpCadastro."(usuario_id) Values('$idUsuario')");
+	if($face){
+		session_start("usuario");
+		$_SESSION["TipoUsuario"] 	= $tpCadastro;
+		$_SESSION["nome_usuario"]	= $nome;
+		$_SESSION["usuario_id"]		= $idUsuario;
+			
+		$resultado = mysql_query("SELECT Id FROM $tpCadastro WHERE Usuario_Id ='$idUsuario'");
+		$linhas = mysql_num_rows ($resultado);
+		
+		if($linhas > 0) //testa se foi encontrado um usuario com o username ou email colocado
+		{
+			$_SESSION["idEspecifico"] = mysql_result($resultado, 0, "Id");
+				
+		}	
+		echo "adm/index.php";
+		die();
+	}
 	header("location:Login.php?codigo=2");	
 	
 }else{
-	header("location:Cadastro.php?codigo=1");	
+	
+	if($face){
+		echo "Cadastro.php?codigo=1";
+		die();
+	}
+	header("location:Cadastro.php?codigo=1");
+	
 }
 
 function converter_data($data) {

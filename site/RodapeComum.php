@@ -1,5 +1,15 @@
     <!--rodapé-->
+    <script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
     <div id="rodape">
+    	<div style="margin-left:30px" class="fb-like" data-href="http://www.facebook.com/AulaOnBrasil?ref=hl" data-send="true" data-layout="button_count" data-width="400px"  data-show-faces="true" data-font="arial"></div>
     <div id="rodapei">
             <table style="color:black">
             <td>

@@ -3,9 +3,7 @@
 ?>
 <link rel="stylesheet" href="css/jquery-ui.css" /> 
 
-<script type="text/javascript" src="js/jquery.bar.js"></script>
-<script type="text/javascript" src="js/jquery.blockUI.js"></script>
-<script language="javascript" type="text/javascript" src="js/jqueryui-1.9.2.js"></script>
+<script type="text/javascript" src="js/jquery.blockUI.js"></script> 
 
  <style>
   #feedback { font-size: 1.4em; }
@@ -19,14 +17,20 @@
    
 <script type="text/javascript">
 
-function verificarCadastro() { 
+
+function verificarCadastro(email) { 
+	var login = email;
+    if(login == "")
+    {
+    	login = $('input[name=login]').val();
+	}
 	$.ajax(
     		{ 
         	    url: 'VerificarCadastro.php', 
-        	    data: {email:$('input[name=login]').val()},
+        	    data: {email:login},
         	    success: function(data){
             	    if(data == 'Ambos'){
-            	    	 $( "#selectable" ).selectable();
+            	    	 $("#selectable").selectable();
             	    	$.blockUI({ message: $('#escolha')});	
             	    }else if(data == 'Aluno' || data == 'Professor'){
                 	    $('#tipoCadastro').val(data);
@@ -41,8 +45,45 @@ function verificarCadastro() {
         	}		
 	); 
 } 
-	
+
+  		
 $(document).ready(function(){
+	//login facebbok
+	
+	window.fbAsyncInit = function(d, s, id) {
+	    FB.init({
+	      appId      : '457857360956126', // App ID
+	      channelUrl : 'http://www.aulaon.com.br/channel.html', // Channel File
+	      status     : true, // check login status
+	      cookie     : true, // enable cookies to allow the server to access the session
+	      xfbml      : true  // parse XFBML
+	    });	
+	     
+	   /*FB.getLoginStatus(function(response) {
+	    	  if (response.status === 'connected') {		    	    
+	    	  } else if (response.status === 'not_authorized') {	
+	    	  } else {		
+	    	  }
+	    });*/
+  	};	
+	
+	$('#loginF').click(function(){
+  	    FB.login(function(response) {
+  	        if (response.authResponse) {
+  	             buscarDados(response.authResponse.accessToken);
+  	        } else {
+  	            // cancelled
+  	        }
+  	    },{scope: 'email,user_birthday'});  	
+  	});		
+  	
+  	function buscarDados(accessToken) {  		
+	    FB.api('/me', function(response) {	 
+	    	$('input[name=login]').val(response.email);
+	    	$('input[name=senha]').val(response.id);	
+	    	verificarCadastro(response.email);    	     
+	    });	
+	}
 	
 	 $('#selectable li').click(function() {
 		 $('#tipoCadastro').val($(this).html());
@@ -114,6 +155,15 @@ $(document).ready(function(){
     <input type="hidden" id="tipoCadastro" name="tipoCadastro" value="" size="24"/>
 	<input style="margin-left:400px" type="button" class="botaosite" id="botaoLogin" value="Entrar"/> 
     </form>
+    
+    <div class="automatico">
+		<center>
+			<a id="loginF" href="#">
+				<img width="160px" src="imagens/botao-entrar-facebook.png"></img>
+			</a>			
+		</center>
+	</div>
+	
     <a style="margin-left:365px" href="Esqueci_Senha.php">Esqueci minha senha</a> 
     </div>
     </div>

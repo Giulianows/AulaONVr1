@@ -31,8 +31,7 @@ CREATE  TABLE IF NOT EXISTS `aulaonco_site_aulas`.`Disciplina_Palavra_Chave` (
     FOREIGN KEY (`Palavra_Chave_Id` )
     REFERENCES `aulaonco_site_aulas`.`Palavras_Chaves` (`Id` )
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+    ON UPDATE NO ACTION);
 
 -- -----------------------------------------------------
 -- Table `aulaonco_site_aulas`.`Dias_Semanas`

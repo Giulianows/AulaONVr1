@@ -81,6 +81,7 @@
 <div class="conteudo">
     <!--menu-->
 	<?php 
+	    $tipoUsuario = strtolower($tipoUsuario);
 		include("$tipoUsuario/MenuLogado.php");
 	?>
     <!--/menu-->

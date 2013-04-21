@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/index.css" />
     <div class="conteudo">
     <div class="principal">
+    <div id="fb-root"></div>
     <p id="textohome">O portal AulaON foi elaborado com o objetivo de facilitar os serviços de aulas particulares baseando-se no ensino EAD (Educação a Distância), hoje largamente utilizado por cursos técnicos e até mesmo cursos superiores.</p>
     	<br>
     	<ul><h1>Aluno</h1>

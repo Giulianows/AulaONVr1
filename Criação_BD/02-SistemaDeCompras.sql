@@ -13,11 +13,11 @@ CREATE  TABLE IF NOT EXISTS `aulaonco_site_aulas`.`Status_Transacoes` (
  -- -----------------------------------------------------
 -- Dados padrão da tabela status_transacoes
 -- -----------------------------------------------------
-INSERT into status_transacoes (nome) values ('Iniciada');
+INSERT into Status_Transacoes(nome) values ('Iniciada');
 
-INSERT into status_transacoes (nome) values ('Completada');
+INSERT into Status_Transacoes(nome) values ('Completada');
 
-INSERT into status_transacoes (nome) values ('Creditada');
+INSERT into Status_Transacoes(nome) values ('Creditada');
 
 
 -- -----------------------------------------------------

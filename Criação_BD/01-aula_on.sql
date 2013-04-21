@@ -77,15 +77,16 @@ DROP TABLE IF EXISTS `aulaonco_site_aulas`.`Usuario` ;
 CREATE  TABLE IF NOT EXISTS `aulaonco_site_aulas`.`Usuario` (
   `Id` INT NOT NULL AUTO_INCREMENT ,
   `Nome` VARCHAR(45) NOT NULL ,
-  `DN` DATE NOT NULL ,
+  `DN` DATE NULL ,
   `Sexo` VARCHAR(45) NOT NULL ,
-  `CPF` VARCHAR(45) NOT NULL ,
-  `Email` VARCHAR(145) NOT NULL ,
-  `Telefone` VARCHAR(45) NOT NULL ,
-  `Celular` VARCHAR(45) NOT NULL ,
-  `Senha` VARCHAR(45) NOT NULL ,
+  `CPF` VARCHAR(45) NULL ,
+  `Email` VARCHAR(145) NULL ,
+  `Telefone` VARCHAR(45) NULL ,
+  `Celular` VARCHAR(45) NULL ,
+  `Senha` VARCHAR(45) NULL ,
   `Data_exp` DATETIME,
   `Senha_temp` VARCHAR(45) NOT NULL default '' ,
+  `Facebook` BIT NOT NULL default 0 ,
   PRIMARY KEY (`Id`) )
 ENGINE = InnoDB;
 
