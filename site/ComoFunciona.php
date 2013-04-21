@@ -4,7 +4,7 @@
 	
 	<link rel="stylesheet" href="css/ComoFunciona.css" />
 	
-	<script language="javascript" type="text/javascript" src="js/jqueryui-1.9.2.js"></script>
+	
 	
 	<script>
 	  $(function() {

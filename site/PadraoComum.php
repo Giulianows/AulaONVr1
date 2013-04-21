@@ -14,14 +14,14 @@
     <script language="javascript" type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="js/jquery.validate.js"></script>
     <script type="text/javascript" src="js/jquery.bar.js"></script> 
-    <!--  <script type="text/javascript" src="js/jquery.uniform.js"></script>-->
+    <script type="text/javascript" src="js/jquery.uniform.js"></script>
     
     
     <script type='text/javascript'>
-	    // Estilo para todos os select e checkbox
-	    //$(function () {
-	      // $("select, :checkbox").uniform();
-	    //});
+	     //Estilo para todos os select e checkbox
+	    $(function () {
+	       $("select, :checkbox").uniform();
+	   });
 	</script>
 	
 </head>

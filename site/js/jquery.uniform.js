@@ -826,9 +826,9 @@ Enjoy!
 		];
 
 	// IE6 can't be styled - can't set opacity on select
-	if ($.browser.msie && $.browser.version < 7) {
-		allowStyling = false;
-	}
+	//if ($.browser.msie && $.browser.version < 7) {
+		//allowStyling = false;
+	//}
 
 	$.uniform = {
 		// Default options that can be overridden globally or when uniformed

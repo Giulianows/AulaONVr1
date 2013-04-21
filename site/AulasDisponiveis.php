@@ -2,7 +2,7 @@
 	include("PadraoComum.php");
 	?>
 	
-	<script language="javascript" type="text/javascript" src="js/jqueryui-1.9.2.js"></script>
+	
 	<script language="javascript" type="text/javascript" src="js/shadowbox.js"></script>
 	
 	<link rel="stylesheet" href="css/AulasDisponiveis.css" />
