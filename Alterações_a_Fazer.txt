@@ -3,3 +3,5 @@ direcionar o botão Salvar na página CadastroHorario.php
 verificar horários sobrepostos e se apenas campo "término" for preenchido no CadastroHorario.php
 
 enviar email para o usuário quando se cadastrar e quando esquecer senha
+
+solução para o aulas com o aulas adicionadas

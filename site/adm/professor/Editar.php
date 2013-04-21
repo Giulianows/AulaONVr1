@@ -377,7 +377,7 @@ return true;
 		<div class="form_subtitle">Experiência Educacional</div>
 		<form method="POST" id="Educacional" action="" >
 		
-		<div class="form_row">
+		<div class="form_roww">
 	    <select id="escolaridade" onchange="FuncaoToggle();">
 	   		<option class="contact_input" value="Escolaridade">Escolaridade</option>
 			<option class="contact_input" value="EMedioCursando">Ensino médio - cursando</option>
