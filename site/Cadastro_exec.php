@@ -64,7 +64,7 @@ if($linhas > 0){
 
 }else{
 
-	$result = mysql_query("INSERT INTO Usuario(Nome,DN,Sexo,CPF,Email,Telefone,Celular,Senha,Facebook) Values('$nome', '$dn' , '$sexo',
+	$result = mysql_query("INSERT INTO Usuario(Nome,DN,Sexo,CPF,Email,Telefone,Celular,Senha) Values('$nome', '$dn' , '$sexo',
 			'$cpf', '$email', '$telefone', '$celular', '$senha')");
 	
 }

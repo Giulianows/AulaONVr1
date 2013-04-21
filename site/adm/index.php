@@ -89,11 +89,10 @@
 	<?php 
 		if(isset($_GET["pagina"])){
 			$paginaEnviada = $_GET["pagina"];
-
 			if($paginaEnviada <> "")
 			{
-				$caminho = __DIR__ . "\\". $tipoUsuario . "\\" . $paginaEnviada . ".php";
-				
+				$caminho = dirname(__FILE__) . "/". $tipoUsuario . "/" . $paginaEnviada . ".php";
+
 				if(file_exists($caminho)){
 					include("$tipoUsuario/$paginaEnviada.php");		
 				}else{
