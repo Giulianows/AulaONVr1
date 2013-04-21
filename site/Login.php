@@ -18,9 +18,9 @@
 <script type="text/javascript">
 
 
-function verificarCadastro(email) { 
+function verificarCadastro(email) {
 	var login = email;
-    if(login == "")
+    if(login == null || login = "")
     {
     	login = $('input[name=login]').val();
 	}
