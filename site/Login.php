@@ -1,7 +1,8 @@
 <?php 
 	include("PadraoComum.php");
 ?>
-<link rel="stylesheet" href="css/jquery-ui.css" /> 
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<link rel="stylesheet" href="css/Login.css" /> 
 
 <script type="text/javascript" src="js/jquery.blockUI.js"></script> 
 
@@ -155,7 +156,7 @@ $(document).ready(function(){
     <input type="hidden" id="tipoCadastro" name="tipoCadastro" value="" size="24"/>
 	<input style="margin-left:400px" type="button" class="botaosite" id="botaoLogin" value="Entrar"/> 
     </form>
-    
+    <a style="margin-left:365px" href="Esqueci_Senha.php">Esqueci minha senha</a>
     <div class="automatico">
 		<center>
 			<a id="loginF" href="#">
@@ -164,7 +165,7 @@ $(document).ready(function(){
 		</center>
 	</div>
 	
-    <a style="margin-left:365px" href="Esqueci_Senha.php">Esqueci minha senha</a> 
+     
     </div>
     </div>
     <!--/conteudo-->

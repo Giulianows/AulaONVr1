@@ -378,7 +378,7 @@ return true;
 	</div>
 	 <?php 
     	}else{
-			echo "<label class='contact'><strong>Deslogue para cadastrar-se</strong></label>";
+			echo "<label class='textoLogado'><strong>Desconecte do seu usuário para cadastrar-se</strong></label>";
 		}
 	 ?>   
 
