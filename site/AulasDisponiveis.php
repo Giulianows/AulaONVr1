@@ -1,5 +1,6 @@
 <?php 
 	include("PadraoComum.php");
+	include "Conecta_Mysql.php";
 	?>
 	
 	
@@ -102,15 +103,16 @@
 			  	<div id="ef">
 			  		<div class="campocursof">
 			    	<select class="selector" id="aula">
-				      <option value="Portugues">Português</option>
-				      <option value="Ingles">Inglês</option>
-				      <option value="Espanhol">Espanhol</option>
-				      <option value="Matematica">Matemática</option>
-				      <option value="Fisica">Física</option>
-				      <option value="Quimica">Química</option>
-				      <option value="Biologia">Biologia</option>
-				      <option value="Historia">História</option>
-				      <option value="Geografia">Geografia</option>
+			    		<option selected value="0"></option>	
+			    	<?php 			    	
+			  		$resultado = mysql_query("SELECT Id, Nome FROM Disciplinas WHERE Nivel_Disciplina_Id=1");
+			  		if(mysql_num_rows($resultado) > 0){
+							while ($obj = mysql_fetch_array($resultado)) {?>
+								<option value="<?php echo $obj['Id']?>"><?php echo $obj['Nome']?></option>									
+						<?php 
+							}					
+					}					
+			  		?>
 			    	</select>
 			    	</div>
 			    	<div class="campoorganiza">
@@ -158,16 +160,16 @@
 			  	<div id="em">
 			  		<div class="campocursof">
 			   		<select size="1" name="D3">
-				      <option value="Portugues">Português</option>
-				      <option value="Literatura">Literatura</option>
-				      <option value="Ingles">Inglês</option>
-				      <option value="Espanhol">Espanhol</option>
-				      <option value="Matematica">Matemática</option>
-				      <option value="Fisica">Física</option>
-				      <option value="Quimica">Química</option>
-				      <option value="Biologia">Biologia</option>
-				      <option value="Historia">História</option>
-				      <option value="Geografia">Geografia</option>
+			   		<option selected value="0"></option>
+			    	<?php 			    	
+			  		$resultado = mysql_query("SELECT Id, Nome FROM Disciplinas WHERE Nivel_Disciplina_Id=2");
+			  		if(mysql_num_rows($resultado) > 0){
+							while ($obj = mysql_fetch_array($resultado)) {?>
+								<option value="<?php echo $obj['Id']?>"><?php echo $obj['Nome']?></option>									
+						<?php 
+							}					
+					}					
+			  		?>
 				    </select>
 				    </div>
 				    <div class="campoorganiza">
@@ -215,8 +217,16 @@
 			  	<div id="es">
 			  		<div class="campocurso">
 			    	<select size="1" name="D5">
-			      		<option value="Administracao">Administração</option>
-			      		<option value="CC">Ciência da Computação</option>
+			    		<option selected value="0"></option>
+			    	<?php 			    	
+			  		$resultado = mysql_query("SELECT Id, Nome FROM Disciplinas WHERE Nivel_Disciplina_Id=3");
+			  		if(mysql_num_rows($resultado) > 0){
+							while ($obj = mysql_fetch_array($resultado)) {?>
+								<option value="<?php echo $obj['Id']?>"><?php echo $obj['Nome']?></option>									
+						<?php 
+							}					
+					}					
+			  		?>
 			    	</select>
 			    	</div>
 			    	<input type="text" name="cadeira" id="cadeira"  class=""/>
@@ -259,8 +269,16 @@
 			  <div id="oc">
 			  	  <div class="campocurso">
 				  <select size="1" name="D7" >
-				  	  <option value="Danca">Dança</option>
-				      <option value="Musica">Música</option>
+				  	<option selected value="0"></option>
+			    	<?php 			    	
+			  		$resultado = mysql_query("SELECT Id, Nome FROM Disciplinas WHERE Nivel_Disciplina_Id=4");
+			  		if(mysql_num_rows($resultado) > 0){
+							while ($obj = mysql_fetch_array($resultado)) {?>
+								<option value="<?php echo $obj['Id']?>"><?php echo $obj['Nome']?></option>									
+						<?php 
+							}					
+					}					
+			  		?>
 				  </select>
 				  <input type="text" name="cadeira" id="curso"  class=""/>
 				  </div>
