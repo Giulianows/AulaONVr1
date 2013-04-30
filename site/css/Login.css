@@ -2,14 +2,12 @@
 {
     
 }
-#login
-{
-position:absolute;
-top:3%;
-left:58%;
-font-size:large;
-}
 
+#formEntrar
+{
+	margin-left:300px;
+	margin-top:120px;
+}
 .automatico{
 	margin-top:-250px;
 	margin-left:-500px;

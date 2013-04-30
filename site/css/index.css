@@ -1,19 +1,50 @@
 #imagemhome
 {
-	margin-left:100px;
-	margin-top:50px;
+	margin-left:476px;
+	heigth:244px;
+	width:284px;
 }
 
 #textohome
 {
-	text-align:center;
-	color:#FF8C00;
-	font-size:20px;
-	margin-top:20px;
+	position:absolute;
+	margin-top:10px;
+	height:94px;
+	width:506px;
 }
 
-.principal ul
+#imagemaluno
 {
-	text-align:justify;
-	color:black;
-}	
+	position:absolute;
+	height:59px;
+	width:68px;
+	margin-left:510px;
+	margin-top:220px;
+}
+
+#imagemprofessor
+{
+	position:absolute;
+	height:77px;
+	width:83px;
+	margin-left:200px;
+	margin-top:200px;
+}
+
+#textoprofessor
+{
+	
+	height:173px;
+	width:312px;
+	margin-left:89px;
+	margin-top:55px;
+}
+
+#textoaluno
+{
+	position:absolute;
+	height:135px;
+	width:258px;
+	margin-left:20px;
+	margin-top:280px;
+}

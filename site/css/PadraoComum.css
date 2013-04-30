@@ -1,14 +1,13 @@
 body 
 {
-			color: #868466;
-			font-family: Arial, Helvetica, sans-serif;
+			font-family: tahoma;
 			font-size: 14px;
 			line-height: 1;
 			margin: 0;
-			min-width: 960px;
+			width: 100%;
 			padding: 0;
-			background: url(../imagens/bg-body.jpg) repeat;
-			
+			background: url(../imagens/bg_body.png) no-repeat;
+			text-align:center; /* hack para o IE */
 }
 @font-face {
 	font-family: 'IcoMoon';
@@ -31,8 +30,8 @@ body
 #icoadm
 {
 	position:absolute;
-	margin-top:180px;
-	margin-left:900px;
+	margin-top:-80px;
+	margin-left:700px;
 }
 
 #menu{
@@ -40,49 +39,17 @@ body
 		float: left;
 		padding: 0;
 		text-decoration: none;
-		width: 100%;
+		width: 69%;
+		margin-left:0px;
+		margin-top:-35px;
 		}
-		#menu ul {
-			list-style-type:none;
-			padding:0%;
-			margin-left: 0%;
-			float:left;
-			width: 100%;
-			font: 16px Arial, Helvetica, sans-serif;
-			z-index:10;
-		}
-
-		#menu ul li
-		{
 		
-			display: block;
-			list-style: none;
-			float: left;
-			line-height: 40px;
-			margin: 0 5px;
-			text-align: center;
-		}
-
-		#menu ul li a {
-			
-			display: block;
-			margin: 0;
-			font-weight: bold;
-			padding: 0 10px;
-			text-decoration: none;
-             
-		}
-
-		#menu a:hover {
-			text-decoration:underline;
-		}
-    
 #tudo
 {
 	margin: 0 auto;
 	padding: 0;
-	width: 960px;
-	
+	width: 760px;
+	text-align:left; /* "remédio" para o hack do IE */
 }
 
 * html #tudo 
@@ -92,21 +59,23 @@ body
 
 .conteudo
 {
-	background: url(../imagens/bg-content.png) repeat-y top center;
-	margin: 0;
-	min-height: 500px;
-	padding: 0;
+	background: url(../imagens/bg_conteudo.png) repeat-y top center;
+	margin-left: 0px;
+	margin-top:0px;
+	height: 748px;
+	width:100%;
+	padding: 0px;
 	padding-bottom: 20%;
 }
 .principal
 {
 	padding: 0;
-	margin: 0 10px 0 50px;
+	margin: 0;
 	overflow: auto;
-	min-height: 400px;
+	height: 900px;
 	line-height: 30px;
-	width: 760px;
-	float:left;	
+	float:left;
+	width:100%;	
 }
 
 .principal p
@@ -142,14 +111,6 @@ body
 	border:1px #DFDFDF solid;
 }
 
-#slogan
-{
-	color:white;
-	font:33px Bickley Script;
-	margin-left:100px;
-	margin-top:-30px;
-}
-
 .botaosite
 {
 	font:bold 14px Tahoma, Geneva, sans-serif;
@@ -179,49 +140,60 @@ body
 
 #topo
 {
-	height: 180px;
+	height: 100px;
+	width:100%;
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
-	background: url(../imagens/bg-header.png) no-repeat top center;
+	background: url(../imagens/bg_topo.png);
 	
 }
 #logo
 {
 	position:absolute;
-	margin-left:80px;
-	margin-top:30px;
+	margin-left:0px;
+	margin-top:7px;
 }
+#slogan
+{
+	margin-left:0px;
+	margin-top:57px;
+}
+
 #login
 {
-	position:relative;
+	position:absolute;
+	margin-left:110px;
+	margin-top:0px;
 	height: 10px;
 	width:400px;
 	color:white;
 	top:20px;
 	left:540px;
-	font: 14px Arial, Helvetica, sans-serif;
+	font: 14px Tahoma, Helvetica, sans-serif;
 }
 
 #rodape
 	{
-	background: url(../imagens/bg-footer.png) no-repeat top center;
-	height: 222px;
-	margin: 0;
-	padding: 38px 0 31px;
-	margin: 0;
-	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+	width: 760px;
+	text-align:left; /* "remédio" para o hack do IE */
+	height: 120px;
 	}
 #rodapei
 	{
-		margin-left:65%;
-		font: 12px Arial, Helvetica, sans-serif;
+		
+		margin-top:-24px;
+		margin-left:400px;
+		font: 12px Tahoma, Helvetica, sans-serif;
 	}
 #rodapej
 	{
-		margin-top:-6.4%;
-		margin-left:80%;
-		font: 12px Arial, Helvetica, sans-serif;
+	position:absolute;
+		margin-top:-57px;
+		margin-left:600px;
+		font: 12px Tahoma, Helvetica, sans-serif;
 	}
 
 /*Mensagens*/

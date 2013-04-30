@@ -20,9 +20,9 @@ h3:hover {
 	
 .accordiondiv{
 			text-align:left;
-			font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+			font-family: tahoma;
 			color: black;
-			font-size:13px;
+			font-size:12px;
 			margin-bottom:20px;
 			margin-top:20px;
 		}
@@ -32,5 +32,5 @@ li {
 
 #rodapej
 	{
-		margin-top:-9.4% !important;
+		margin-top:-85px;
 	}

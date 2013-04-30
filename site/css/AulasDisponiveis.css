@@ -109,21 +109,21 @@
 		table.tabela_4colunas{
 			position:absolute;
 			margin-top:50px;
-			margin-left:5px;
+			margin-left:40px;
 			padding:5px;
 			border-collapse:collapse;
 			border:1px solid #FFCA5E;
 		}
-		
+
 		table.tabela_4colunas tr td{
 			background: #fff;
 			border:1px #DFDFDF solid;
 			text-align:center;
 			padding:2px;
 			border-collapse:collapse;
-			font-size: 0.8em;
+			font-size: 12px;
 			line-height: 1.4em;
-			font-family: Arial, Helvetica, sans-serif;
+			font-family: tahoma;
 			color: #777777;
 			border-top: 1px solid #FFCA5E;
 			border-right: 1px solid #DDDDDD;
@@ -131,25 +131,25 @@
 			
 		table.tabela_4colunas th {
 			background: url('../imagens/bg_th.jpg') no-repeat right;
-			line-height: 40px !important;
 			color: #FFFFFF;
-			font-size: 0.8em;
+			font-size: 12px;
+			font-family: tahoma;
 			font-weight: bold;
-			padding: 0px 60px;
-			margin: 10px 0px 0px;
+			padding: 0px 30px 0px 30px;
 			text-align: center;
 			border-right: 1px solid #FCF1D4;
+			height:30px;
 		}
 		
 		th.professor{
-			width:215px;
+			width:260px ;
 		}
 		
 /*tabela com 5 colunas, única diferença para a de 4 colunas é o "margin-left" na "table.tabela_5colunas"*/
 		table.tabela_5colunas{
 			position:absolute;
 			margin-top:50px;
-			margin-left:-27px;
+			margin-left:0px;
 			padding:5px;
 			border-collapse:collapse;
 			border:1px solid #FFCA5E;
@@ -159,11 +159,11 @@
 			background: #fff;
 			border:1px #DFDFDF solid;
 			text-align:center;
-			padding:2px;
+			padding:0px;
 			border-collapse:collapse;
-			font-size: 0.8em;
+			font-size: 12px;
 			line-height: 1.4em;
-			font-family: Arial, Helvetica, sans-serif;
+			font-family: tahoma;
 			color: #777777;
 			border-top: 1px solid #FFCA5E;
 			border-right: 1px solid #DDDDDD;
@@ -171,12 +171,12 @@
 			
 		table.tabela_5colunas th {
 			background: url('../imagens/bg_th.jpg') no-repeat right;
-			line-height: 40px !important;
 			color: #FFFFFF;
-			font-size: 0.8em;
+			font-size: 12px;
 			font-weight: bold;
-			padding: 0px 52px;
-			margin: 10px 0px 0px;
+			font-family: tahoma;
+			padding: 0px 30px 0px 30px;
+			margin: 0px 0px 0px 0px;
 			text-align: center;
 			border-right: 1px solid #FCF1D4;
 		}
@@ -200,11 +200,7 @@
 			font-family: Arial, Helvetica, sans-serif;
 			color: #777777;
 		}
-		.conteudo
-		{
-			min-height: 1000px !important;
-		}
-		
+
 /* CSS seguintes referem-se ao jquery da página */
 
 /* Layout helpers

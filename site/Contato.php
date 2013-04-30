@@ -8,10 +8,10 @@
     <div class="conteudo">
     <div class="principal">
     <div id="contato">
-		    <p style="margin-left:65px;margin-top:50px;color: #333333;margin-bottom: 10px;">
+		    <p style="margin-left:120px;margin-top:50px;color: #333333;margin-bottom: 10px;">
 		    E-mail: contato@aulaon.com.br
 		    </p>
-		    <a style="margin-left:115px" href="https://www.facebook.com/AulaOnBrasil"><img border="0" src="imagens/imgfb.png"Pulpit rock" width="25" height="25"></a>
+		    <a style="margin-left:175px" href="https://www.facebook.com/AulaOnBrasil"><img border="0" src="imagens/imgfb.png"Pulpit rock" width="25" height="25"></a>
 		    <a href="http://twitter.com/aulaonadm"><img border="0" src="imagens/imgtw.png"Pulpit rock" width="25" height="25"></a>
 		    <a href=""><img border="0" src="imagens/imgyt.png"Pulpit rock" width="25" height="25"></a>
 		    <br><br>

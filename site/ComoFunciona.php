@@ -27,11 +27,11 @@
 			<div class="accordiondiv">
 				<ul>
 					<li>Efetue seu cadastro no modo professor, este é mais completo que o modo aluno, pois deve conter informações sobre sua formação acadêmica e também dados da conta bancária para pagamento pelas aulas ministradas.</li>
-	    			<br>
+	    			
 	    			<h4>Cadastro de aulas</h4>
 	    			<li>Após efetuar seu cadastro pessoal, você deve cadastrar que tipo de aulas particulares ministra.</li>
 	    			<li>Você escolhe valor a ser investido pelo aluno em OnCoin.</li>
-	    			<br>
+	    			
 	    			<h4>Cadastro de horários</h4>
 	    			<li>Após cadastrar as aulas, você deve informar que dias da semana e que horários terá disponível para dar aulas, também deverá informar quanto tempo de antecedência mínima para agendar a aula, por exemplo.</li>
 	    			<li>Se você tem disponível na terça-feira os seguintes horários:</li>

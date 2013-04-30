@@ -1,6 +1,6 @@
 	#contato{
 		line-height: 30px !important;
-		margin-left:250px;
+		margin-left:180px;
 		color: #333;
 	}
 	
@@ -32,6 +32,7 @@
 	#contato button{
 		cursor:pointer;
 		padding:10px;
+		margin-right:100px;
 		float:right;
 		border: 1px solid #ddd;
 		border-radius: 3px;

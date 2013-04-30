@@ -1,10 +1,10 @@
 #cadastro {
     }
     .contact_form{
-width:75%;
+width:510px;
 float:left;
 padding:5px;
-margin:50px 0 0 170px;
+margin:50px 0 0 130px;
 _margin:2px 0 0 1px;
 border:1px #DFD1D2 dashed;
 position:relative;
@@ -19,7 +19,7 @@ color:#a53d17;
 }
 label.contact{
 height:5px;
-width:125px;
+width:135px;
 float:left;
 font-size:12px;
 text-align:right;
@@ -39,7 +39,7 @@ border-radius: 3px;
 }
 #sexo{
 float:right;
-margin-right:207px;
+margin-right:195px;
 }
 
 #sexo select{
@@ -97,7 +97,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff670f', end
 
 #tpCadastro{
 float:right;
-margin-right:210px;
+margin-right:200px;
 cursor:pointer;
 }
 

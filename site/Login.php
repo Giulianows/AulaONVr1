@@ -146,17 +146,18 @@ $(document).ready(function(){
 	 <!--conteudo-->
     <div class="conteudo">
     <div class="principal">    
-    
-	<p style="margin-left:410px;margin-top:100px;">E-mail:</p>
+    <div id="formEntrar">
+	<p style="margin-left:60px">E-mail:</p>
 	<form id="loginForm" method="POST" action="Login_exec.php" >
-    <input style="margin-left:350px;margin-top:25px;" type="text" name="login" size="24" class="log"/>
-    <p style="margin-left:410px;margin-top:20px;">Senha:</p>
-    <input style="margin-left:350px;margin-top:10px;" type="password" name="senha" size="24"  class="log"/>
+    <input style="margin-left:0px;" type="text" name="login" size="24" class="log"/>
+    <p style="margin-left:60px;margin-top:15px">Senha:</p>
+    <input style="margin-left:0px" type="password" name="senha" size="24"  class="log"/>
     <br />
     <input type="hidden" id="tipoCadastro" name="tipoCadastro" value="" size="24"/>
-	<input style="margin-left:400px" type="button" class="botaosite" id="botaoLogin" value="Entrar"/> 
+	<input style="margin-left:50px" type="button" class="botaosite" id="botaoLogin" value="Entrar"/> 
     </form>
-    <a style="margin-left:365px" href="Esqueci_Senha.php">Esqueci minha senha</a>
+    <a style="margin-left:20px" href="Esqueci_Senha.php">Esqueci minha senha</a>
+    </div>
     <div class="automatico">
 		<center>
 			<a id="loginF" href="#">
