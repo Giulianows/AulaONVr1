@@ -54,8 +54,9 @@
                 <div id="topo">
                 	<!--logotipo-->
                     <div id="logo">
-                    <a href="../index.php"><img border="0" src="../imagens/aulaon.png" alt="AulaON" title="AulaON" width="350" height="90"></a>
+                    <a href="../index.php"><img border="0" src="../imagens/logo_topo.png" alt="AulaON" title="AulaON" width="235" height="50"></a>
                     </div>
+                    <img id="slogan" src="../imagens/slogan_topo.png">
                     <div id="logoff">
                     <p><?php echo (isset($_SESSION["nome_usuario"])) ? $_SESSION["nome_usuario"]:""?>, seja bem vindo ao AulaON <br />
 

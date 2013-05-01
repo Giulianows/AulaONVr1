@@ -5,7 +5,8 @@ body {
 	background-color: transparent;
 	text-align:center; /* hack para o IE */
 	border:none;
-	z-index:0; 
+	z-index:0;
+	background: url(../../imagens/bg_body.png) no-repeat; 
    
     
 }
@@ -44,8 +45,8 @@ body {
 
 #icocreditos
 {
-	position:relative;
-	margin-top:30px;
+	position:absolute;
+	margin-top:35px;
 	margin-left:90%;
 }
 
@@ -53,7 +54,7 @@ body {
 {
 	position:absolute;
 	margin-top:40px;
-	margin-left:10px;
+	margin-left:93%;
 	color:#7FFF00;
 }
 
@@ -63,22 +64,23 @@ body {
     width: 100%; 
 	margin:0 auto;      
 	text-align:left; /* "remédio" para o hack do IE */
-	background-image: url(../imagens/bg-adm.gif);	
+	 /* background-image: url(../imagens/bg-adm.gif); */
 
 }
 
 .conteudo
 {
-	height:750px;
 	width: 100%;
-	padding-bottom: 100px;		
+	padding-bottom: 100px;
+	margin-top:-20px;
+	height: 748px;		
 }
 
 .principal
 {
 	position:relative;
 	float: right;
-	height:700px;
+	height:800px;
 	color: #666;
 	background: #F8F8F8;
     border: 0px solid #DEDEDE;
@@ -145,8 +147,8 @@ h2{
 	
 	margin-left:0%;
 	width:100%;
-	height: 60px;
-	background-image: url(../imagens/bg-header1.gif);
+	height: 100px;
+	/*background-image: url(../imagens/bg-header1.gif);*/
 	overflow: hidden;
 	padding-bottom: 20px;
 	
@@ -155,18 +157,25 @@ h2{
 #logo
 {
  	position:absolute;
-	margin-left:25%;
-	margin-top:-12px;
+	margin-left:295px;
+	margin-top:7px;
 }
+
+#slogan
+{
+	margin-left:295px;
+	margin-top:57px;
+}
+
 #logoff
 {
 	position:relative;
 	height: 10px;
 	width:400px;
 	color:white;
-	top:26%;
+	margin-top:-70px;
 	left:55%;
-	font: 14px Arial, Helvetica, sans-serif;
+	font: 14px tahoma;
 }
 
 #rodape
@@ -176,12 +185,12 @@ h2{
 		width:100%;
 		bottom:0px;
 		height:120px;
-		background: #1A1A1A;
-		box-shadow: inset 0 7px 7px rgba(0, 0, 0, 0.55);
+		/*background: #1A1A1A;
+		box-shadow: inset 0 7px 7px rgba(0, 0, 0, 0.55);*/
 		padding-top: 10px;
 		display: inline-block;
 		left:0px;
-		
+		margin-top:40px;
 	
 }
 #clear{ display:block;}
@@ -189,7 +198,7 @@ h2{
 #rodapei
 {
 	float: left;
-	margin: 1px 0 0 72%;
+	margin: 15px 0 0 72%;
 	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
   	border-bottom-left-radius: 3px;
  	border-bottom-right-radius: 3px;
@@ -200,7 +209,7 @@ h2{
 #rodapej
 {
 	float: right;
-	margin: 1px 20px 0 0;
+	margin: 15px 20px 0 0;
 	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
   	border-bottom-left-radius: 3px;
  	border-bottom-right-radius: 3px;

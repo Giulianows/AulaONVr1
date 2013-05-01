@@ -1,5 +1,6 @@
 #imagemhome
 {
+	position:absolute;
 	margin-left:476px;
 	heigth:244px;
 	width:284px;
@@ -8,7 +9,7 @@
 #textohome
 {
 	position:absolute;
-	margin-top:10px;
+	margin-top:55px;
 	height:94px;
 	width:506px;
 }
@@ -37,7 +38,7 @@
 	height:173px;
 	width:312px;
 	margin-left:89px;
-	margin-top:55px;
+	margin-top:279px;
 }
 
 #textoaluno
