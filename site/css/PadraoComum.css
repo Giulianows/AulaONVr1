@@ -1,5 +1,5 @@
 body 
-{
+{			height:100%;
 			font-family: tahoma;
 			font-size: 14px;
 			line-height: 1;
@@ -35,13 +35,14 @@ body
 }
 
 #menu{
+	position:absolute;
 		display: block;
 		float: left;
 		padding: 0;
 		text-decoration: none;
 		width: 69%;
 		margin-left:0px;
-		margin-top:-35px;
+		margin-top:-19px;
 		}
 		
 #tudo
@@ -145,7 +146,6 @@ body
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
-	background: url(../imagens/bg_topo.png);
 	
 }
 #logo
@@ -163,13 +163,11 @@ body
 #login
 {
 	position:absolute;
-	margin-left:110px;
-	margin-top:0px;
 	height: 10px;
 	width:400px;
 	color:white;
-	top:20px;
-	left:540px;
+	margin-top:-64px;
+	margin-left:300px;
 	font: 14px Tahoma, Helvetica, sans-serif;
 }
 
@@ -179,21 +177,21 @@ body
 	padding: 0;
 	width: 760px;
 	text-align:left; /* "remédio" para o hack do IE */
-	height: 120px;
+	height: 105px;
 	}
 #rodapei
 	{
 		
-		margin-top:-24px;
+		margin-top:-23px;
 		margin-left:400px;
-		font: 12px Tahoma, Helvetica, sans-serif;
+		font: 12px Tahoma;
 	}
 #rodapej
 	{
 	position:absolute;
 		margin-top:-57px;
 		margin-left:600px;
-		font: 12px Tahoma, Helvetica, sans-serif;
+		font: 12px Tahoma;
 	}
 
 /*Mensagens*/

@@ -86,8 +86,7 @@ function MM_swapImage() { //v3.0
                 <!--/login-->
                 
                 <a href="adm/index.php" id="icoadm"><img src="imagens/work.png" title="Home do usuário" alt="Home do usuário"></a> 
-                </div>
-        <!--menu-->
+               	        <!--menu-->
     <div id="menu" onload="MM_preloadImages('imagens/menu_r1_c2_s2.png','imagens/menu_r1_c4_s2.png','imagens/menu_r1_c6_s2.png','imagens/menu_r1_c8_s2.png','imagens/menu_r1_c10_s2.png','imagens/menu_r1_c12_s2.png')">
 		<table width="100%" border="0">
   <tr>
@@ -128,7 +127,9 @@ function MM_swapImage() { //v3.0
     </table></td>
   </tr>
 </table>
-	</div>
+	</div> 
+               </div>
+
     <!--/menu-->
     <!--conteudo-->
     <!--/conteudo-->

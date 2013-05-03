@@ -32,7 +32,7 @@
 				<br>
 				<h4>Formas de Pagamento</h4>
 					
-						<img src="imagens/icon_pagseguro.png" alt="PagSeguro" title="PagSeguro" style="height: 60px"/>
+						<img src="imagens/icon_pagseguro.png" alt="PagSeguro" title="PagSeguro" style="height: 45px; width: 95px; margin-left:15px;"/>
 					
             </td>
             </table>
